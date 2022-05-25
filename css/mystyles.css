@@ -45,3 +45,12 @@
     margin: .5em;
     text-align: center;
 }
+.rollingCubesOuter{
+    width: 100%;
+    align-items: center;
+}
+.rollingCubesImg{
+    display: block;
+    margin-left: 5rem;
+    margin-right: auto;
+}

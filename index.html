@@ -13,6 +13,42 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body ng-controller="TicTacToeController">
+    <!-- PLAY BY YOURSELF / WITH COMPUTER -->
+    <div class="modal fade" id="chooseTypeModal" tabindex="-1" role="dialog" aria-labelledby="chooseTypeModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="chooseTypeModalLongTitle">Choose Type of Game</h5>
+                </div>
+                <div class="modal-body">
+                    <h5>Play by Yourself</h5>
+                    <p>You play with someone who sits somewhere around you <br>You play together on one computer</p>
+                    <button type="button" class="btn btn-primary" ng-click="registerChoice('yourself')">Choose 'Play by Yourself'</button>
+                    <hr>
+                    <h5>Play against Computer</h5>
+                    <p>You play against computer which always wins 😈</p>
+                    <button type="button" class="btn btn-primary" ng-click="registerChoice('computer')">Choose 'Play against Computer'</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHOSE STEP IS FIRST -->
+    <div class="modal fade" id="firstStepModal" tabindex="-1" role="dialog" aria-labelledby="firstStepModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="firstStepModalLongTitle">Cubes are rolling... 3</h5>
+                </div>
+                <div class="modal-body">
+                    <div class="rollingCubesOuter">
+                        <img src="img/Rolling_dice.gif" alt="rollingCubes" class="rollingCubesImg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- WINNER MODAL -->
     <div class="modal fade" id="winnerModal" tabindex="-1" role="dialog" aria-labelledby="winnerModalTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
