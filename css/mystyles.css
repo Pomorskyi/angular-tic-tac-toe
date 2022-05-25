@@ -3,31 +3,45 @@
     width: 100%;
     height: fit-content;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin: 20px auto;
 }
 .tableCell{
     width: 70px;
-    height: 70px;
+    height: 65px;
     text-align: center;
     background-color: rgb(168, 206, 196);
-    padding-top: 1em;
     color: rgb(70, 70, 70);
-    font-size: larger;
+    font-size: 40px;
     font-weight: 700;
     cursor: pointer;
-    border-radius: 1rem;
+    border-radius: .4rem;
     border: solid 1px rgb(189, 189, 189);
 }
 .tableCell:hover{
     background-color: darkgrey;
 }
 .myTable{
-    row-gap: 40px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
     background-color: aliceblue;
-    border-radius: 1rem;
+    border-radius: .4rem;
     border: solid 1px rgb(189, 189, 189);
+}
+.clearBtn{
+    display: block !important;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.outerClearBtn{
+    display: block;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.gamerAnnouncement{
+    margin: .5em;
+    text-align: center;
 }
